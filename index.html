@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mai-Pill · Descarga para Android</title>
+<meta name="description" content="Mai-Pill organiza tu medicación: qué te toca, cuándo, y lo que ya has tomado. Descárgala para Android.">
+<meta name="theme-color" content="#6047DB">
+<link rel="icon" href="assets/tile.png">
+<meta property="og:title" content="Mai-Pill">
+<meta property="og:description" content="Tu medicación, clara. Descárgala para Android.">
+<meta property="og:image" content="assets/compartir.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* La misma paleta que la aplicación: quien llega desde aquí no ve dos marcas. */
+  :root {
+    --violeta: #6047DB;
+    --violeta-hondo: #38217F;
+    --lavanda: #DCD4FF;
+    --lavanda-claro: #F1EEFF;
+    --menta: #43C9B7;
+    --menta-suave: #C9F3EB;
+    --tinta: #21172F;
+    --tinta-suave: #5B5470;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--lavanda-claro);
+    color: var(--tinta);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .contenido { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+
+  header { text-align: center; padding-top: 24px; }
+  header img { width: min(280px, 78vw); height: auto; }
+  .lema {
+    margin: 20px auto 0;
+    max-width: 30ch;
+    font-size: 1.25rem;
+    color: var(--tinta-suave);
+  }
+
+  /* El botón es lo único que hay que encontrar sin buscar. */
+  .boton {
+    display: block;
+    margin: 32px auto 8px;
+    max-width: 420px;
+    padding: 20px 24px;
+    border-radius: 22px;
+    background: var(--violeta);
+    color: var(--blanco);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 14px 30px rgba(96, 71, 219, 0.32);
+  }
+  .boton:hover { background: var(--violeta-hondo); }
+  .boton-detalle {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.86;
+  }
+  .nota { text-align: center; color: var(--tinta-suave); font-size: 0.95rem; }
+  .aviso {
+    margin: 32px auto;
+    max-width: 460px;
+    padding: 20px;
+    border-radius: 18px;
+    background: var(--menta-suave);
+    color: #12564D;
+  }
+
+  h2 { margin: 48px 0 12px; font-size: 1.35rem; }
+  .puntos { display: grid; gap: 16px; padding: 0; margin: 0; list-style: none; }
+  .puntos li {
+    background: var(--blanco);
+    border-radius: 18px;
+    padding: 18px 20px;
+  }
+  .puntos strong { display: block; margin-bottom: 2px; }
+  .puntos span { color: var(--tinta-suave); }
+
+  .capturas {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 8px 0 16px;
+    scroll-snap-type: x mandatory;
+  }
+  .capturas img {
+    width: 208px;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    box-shadow: 0 10px 24px rgba(56, 33, 127, 0.16);
+  }
+
+  ol { padding-left: 20px; }
+  ol li { margin-bottom: 10px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--lavanda);
+    color: var(--tinta-suave);
+    font-size: 0.92rem;
+  }
+</style>
+</head>
+<body>
+<div class="contenido">
+
+  <header>
+    <img src="assets/wordmark.png" alt="Mai-Pill">
+    <p class="lema">Qué te toca, cuándo, y lo que ya has tomado. Sin cuentas y sin complicaciones.</p>
+  </header>
+
+      <a class="boton" href="https://github.com/connoreichon/mai-pill-descargas/releases/download/v0.1.0/mai-pill-0.1.0.apk">
+        Descargar para Android
+        <span class="boton-detalle">Versión 0.1.0 · 111.3 MB</span>
+      </a>
+      <p class="nota">Android 7 o superior. Actualizado el 3 de agosto de 2026.</p>
+
+  <h2>Cómo se instala</h2>
+  <ol>
+    <li>Descarga el archivo desde este mismo móvil.</li>
+    <li>Ábrelo. Android te preguntará si permites instalar desde el navegador: es normal
+        cuando una aplicación no viene de la tienda, y solo hay que decir que sí una vez.</li>
+    <li>Instalar y abrir. No pide registro: funciona desde el primer momento.</li>
+  </ol>
+
+  <!--
+    La objeción real de quien llega aquí no es «¿qué hace?», es «¿me fío de
+    instalar algo que no viene de la tienda?». Si esa duda no se contesta,
+    ninguna lista de funciones sirve de nada.
+  -->
+  <h2>¿Es seguro instalarla así?</h2>
+  <ul class="puntos">
+    <li>
+      <strong>El aviso de Android es de serie</strong>
+      <span>Sale con cualquier aplicación que no venga de Google Play, sea de quien sea.
+      No significa que algo vaya mal: significa que no ha pasado por su tienda.</span>
+    </li>
+    <li>
+      <strong>Tus datos no salen del móvil</strong>
+      <span>La medicación, las horas y las fotos de las cajas se guardan en el propio
+      teléfono. No hay servidor al que se suban ni cuenta obligatoria.</span>
+    </li>
+    <li>
+      <strong>Y se puede desinstalar como cualquier otra</strong>
+      <span>Sin suscripciones, sin registro y sin dejar nada detrás.</span>
+    </li>
+  </ul>
+
+  <h2>Qué hace</h2>
+  <ul class="puntos">
+    <li>
+      <strong>Te dice qué toca ahora</strong>
+      <span>La próxima toma en grande, con su hora y su foto. Confirmas de un toque, y si te equivocas se deshace igual de fácil.</span>
+    </li>
+    <li>
+      <strong>Guarda lo que tú marcas</strong>
+      <span>No adivina nada ni interpreta análisis. Anota lo que confirmas para que puedas enseñárselo a tu médico.</span>
+    </li>
+    <li>
+      <strong>Avisa aunque no tengas internet</strong>
+      <span>Los recordatorios son del propio móvil. Y en la pantalla bloqueada no aparece el nombre del medicamento salvo que tú lo pidas.</span>
+    </li>
+    <li>
+      <strong>Al cambiar de móvil no pierdes nada</strong>
+      <span>Guardas un archivo con todo y lo cargas en el nuevo. Sin cuenta y sin depender de nadie.</span>
+    </li>
+  </ul>
+
+  <h2>Cómo se ve</h2>
+  <div class="capturas">
+    <img src="assets/w1-hoy.png" alt="La pantalla Hoy con la próxima toma" loading="lazy">
+    <img src="assets/t5-botiquin-actualizado.png" alt="El botiquín con las horas de cada medicamento" loading="lazy">
+    <img src="assets/20-copia.png" alt="La pantalla para cambiar de móvil" loading="lazy">
+  </div>
+
+  <h2>De momento, solo Android</h2>
+  <p>
+    En iPhone no se puede instalar una aplicación desde una web: Apple solo lo permite
+    a través de la App Store o de TestFlight. La versión de iOS llega por ahí.
+  </p>
+
+  <footer>
+    <p>
+      Mai-Pill no es una aplicación médica: no diagnostica, no receta y no interpreta
+      resultados. Organiza tu medicación y guarda lo que tú confirmas.
+    </p>
+    <p>Versión 0.1.0 · 3 de agosto de 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
