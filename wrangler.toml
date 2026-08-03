@@ -1,0 +1,9 @@
+# Cloudflare Pages lee esto y deja de preguntar.
+#
+# Sin este archivo, la configuracion vive en los desplegables del panel, y ahi
+# es facil dejarse puesto un comando de compilacion heredado de otro proyecto:
+# el despliegue intenta `npm run build`, no encuentra nada que construir y falla
+# antes de copiar un solo archivo. Aqui queda escrito y viaja con el repo.
+name = "mai-pill-web"
+pages_build_output_dir = "public"
+compatibility_date = "2026-01-01"

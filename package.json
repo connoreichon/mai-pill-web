@@ -1,0 +1,8 @@
+{
+  "name": "mai-pill-web",
+  "private": true,
+  "description": "Web de descarga de Mai-Pill. No se compila: es HTML e imagenes.",
+  "scripts": {
+    "build": "node -e \"console.log('Nada que compilar: la web ya esta en public/.')\""
+  }
+}
